@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("prem1218/train-schedule")
+                    app = docker.build("premcloud18/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
